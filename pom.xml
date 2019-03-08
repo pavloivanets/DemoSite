@@ -10,9 +10,9 @@
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.mycompany-community</groupId>
+    <groupId>com.mycompany-community-pivanets</groupId>
     <artifactId>boot-community-demo</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.0.0-PIVANETS-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>Broadleaf Spring Boot Community Demo</name>
 
@@ -67,6 +67,11 @@
                     </execution>
                 </executions>
             </plugin>
+            <plugin>
+              <groupId>org.apache.maven.plugins</groupId>
+              <artifactId>maven-surefire-plugin</artifactId>
+              <version>3.0.0-M3</version>
+            </plugin>
         </plugins>
     </build>
 
@@ -82,7 +87,7 @@
     <dependencyManagement>
         <dependencies>
             <dependency>
-                <groupId>com.mycompany-community</groupId>
+                <groupId>com.mycompany-community-pivanets</groupId>
                 <artifactId>boot-community-demo-core</artifactId>
                 <version>${project.version}</version>
             </dependency>
